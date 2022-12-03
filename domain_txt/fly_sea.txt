@@ -1417,3 +1417,15 @@
 .ledger.com
 .etherscan.io
 .evernote.com
+.byteoversea.com
+.ibytedtos.com
+.ibyteimg.com
+.ipstatp.com
+.muscdn.com
+.musical.ly
+.sgpstatp.com
+.snssdk.com
+.tik-tokapi.com
+.tiktok.com
+.tiktokcdn.com
+.tiktokv.com
