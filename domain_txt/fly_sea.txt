@@ -1432,3 +1432,4 @@
 .gtary.com
 .ihitun.com
 .husay.cc
+.openai.com
