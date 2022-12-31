@@ -1434,3 +1434,4 @@
 .husay.cc
 .openai.com
 .soundofhope.org
+.yahoo.com
