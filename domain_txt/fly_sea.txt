@@ -1435,3 +1435,4 @@
 .openai.com
 .soundofhope.org
 .yahoo.com
+.bing.com
