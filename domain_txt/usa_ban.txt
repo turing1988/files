@@ -24,7 +24,6 @@ binance
 .xrpvalue.com
 .opensea.io
 .ftx.com
-.okx.com
 .bitfinex.com
 .amplitude.com
 .apy.top
