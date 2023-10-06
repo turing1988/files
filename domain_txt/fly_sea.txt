@@ -1444,3 +1444,4 @@
 .nasclub.vip
 .i4k.app
 .edian.news
+.redian.news
