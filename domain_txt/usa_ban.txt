@@ -16,9 +16,8 @@
 .huobi.pro
 .binance.cloud
 .binance.com
-binance
 .bnbstatic.com
-.moonpay.
+.moonpay.com
 .uniswap.org
 .xrpl.org
 .xrpvalue.com
