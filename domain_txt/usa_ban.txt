@@ -15,10 +15,8 @@
 .gatehub.net
 .huobi.pro
 .binance.cloud
-.binance.com
 .bnbstatic.com
 .moonpay.com
-.uniswap.org
 .xrpl.org
 .xrpvalue.com
 .opensea.io
@@ -32,4 +30,3 @@
 .dydx.exchange
 .mexc.com
 .uniswap.org
-.bitfinex.com

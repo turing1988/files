@@ -86,7 +86,6 @@
 .baywords.com
 .bbcchinese.com
 .bbg.gov
-.boniu123.cc
 .bbsland.com
 .bcchinese.net
 .bearteach.com
@@ -153,7 +152,6 @@
 .buzzurl.jp
 .bwsj.hk
 .byethost8.com
-.byteoversea.com
 .c-spanvideo.org
 .cafepress.com
 .calameo.com
@@ -483,7 +481,6 @@
 .ggssl.com
 .gifeye.com
 .gimp.org
-.githubusercontent.com
 .githubmemory.com
 .githubusercontent.com
 .gitscout.com
@@ -679,7 +676,6 @@
 .linglingfa.com
 .linkev.com
 .linkideo.com
-.linuxsecrets.com
 .lipuman.com
 .listorious.com
 .liu.lu
@@ -769,7 +765,6 @@
 .msguancha.com
 .multiproxy.org
 .multiupload.com
-.musical.ly
 .my-proxy.com
 .zerotier.com
 .my903.com
@@ -1092,7 +1087,6 @@
 .sopcast.com
 .sopcast.org
 .soumo.info
-.soundofhope.org
 .spankwire.com
 .speedpluss.org
 .speedup.cyou
@@ -1446,6 +1440,7 @@
 .edian.news
 .redian.news
 .redian.news
+
 
 
 

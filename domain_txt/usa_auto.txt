@@ -9,7 +9,6 @@
 .tokenpocket.pro
 .myetherwallet.com
 .dragonex.io
-.coinmarketcap.com
 .coinbig.com
 .mexc.com
 .cex.io
