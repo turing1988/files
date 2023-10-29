@@ -1439,8 +1439,4 @@
 .i4k.app
 .edian.news
 .redian.news
-.redian.news
-
-
-
 
