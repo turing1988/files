@@ -6,6 +6,6 @@ for txt_f in `ls -1 $txt_d`; do
     txt_p=$txt_d/$txt_f
     yaml_p=$yaml_d/`sed 's/.txt//' <<<${txt_f}`.yaml
     echo "payload:" >$yaml_p
-    sed "s/^/  \- '/g;s/$/'/g" $txt_p >>$yaml_p
+    sed "/^\s*$/d;s/^/  \- '/g;s/$/'/g" $txt_p >>$yaml_p
     sed -i "" "s|- '\.|\- '+.|g" $yaml_p
 done
