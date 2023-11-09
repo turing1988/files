@@ -9,7 +9,6 @@
 .hbfile.net
 .fcoin.com
 .cex.io
-.ripple.com
 .kucoin.com
 .paxful.com
 .gatehub.net
