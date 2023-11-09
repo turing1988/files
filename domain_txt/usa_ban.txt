@@ -15,6 +15,7 @@
 .gatehub.net
 .huobi.pro
 .binance.cloud
+.binance.com
 .bnbstatic.com
 .moonpay.com
 .xrpl.org
