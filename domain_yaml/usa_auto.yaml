@@ -13,7 +13,6 @@ payload:
   - '+.coinbig.com'
   - '+.ascendex.com'
   - '+.coingecko.com'
-  - '+.coinmarketcap.com'
   - '+.mixpanel.com'
   - '+.segment.io'
   - '+.improd.works'
