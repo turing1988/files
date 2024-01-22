@@ -1,4 +1,3 @@
-.advcash.com
 .localbitcoins.com
 .otcbtc.com
 .hbg.com
