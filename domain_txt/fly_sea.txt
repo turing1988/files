@@ -1438,5 +1438,3 @@
 .redian.news
 .xlog.app
 .iheart.com
-.1
-.0
