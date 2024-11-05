@@ -1439,3 +1439,14 @@
 .xlog.app
 .iheart.com
 .perplexity.ai
+.cdn.hinet.net
+.4gtv.tv
+.hinet.net
+.ofiii.com
+.googlevideo.com
+.youtube.com
+.mytvsuper.com
+.tvb.com
+.livednow.com
+.livednow.org
+.wx.sb
