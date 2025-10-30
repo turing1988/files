@@ -1,8 +1,6 @@
 .coinbase.com
 .kraken.com
 .etana.com
-.aicoin.cn
-.aicoin.com
 .aimoon.com
 .btc123.com
 .feixiaohao.com
@@ -21,3 +19,8 @@
 .tokenlon.im
 .techcrunch.com
 .imtoken.com
+.github.com
+.grok.com
+.javdb.com
+.openai.com
+.githubusercontent.com

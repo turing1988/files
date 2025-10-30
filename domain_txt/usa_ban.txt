@@ -30,4 +30,8 @@
 .dydx.exchange
 .mexc.com
 .uniswap.org
+.aicoin.cn
+.aicoin.com
+.aicoin.net.cn
 .coinmarketcap.com
+.saasexch.cc
