@@ -1163,7 +1163,6 @@
 .tibetfund.org
 .tibetonline.com
 .tibetonline.tv
-.tiktok
 .tinychat.com
 .tistory.com
 .tmagazine.com
@@ -1418,10 +1417,6 @@
 .musical.ly
 .sgpstatp.com
 .snssdk.com
-.tik-tokapi.com
-.tiktok.com
-.tiktokcdn.com
-.tiktokv.com
 .gtary.com
 .ihitun.com
 .husay.cc
@@ -1452,3 +1447,4 @@
 .livednow.org
 .wx.sb
 .iill.top
+.x.ai
