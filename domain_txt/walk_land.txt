@@ -4,7 +4,6 @@
 .1redirb.com
 .btckan.com
 .bugsnag.com
-.google.cn
 .clash.razord.top
 .yacd.haishan.me
 .mobaibox.com
@@ -13,3 +12,14 @@
 .dnsany.com
 .cmvideo.cn
 .chinamobile.com
+.google.cn
+blog.google.com
+googletraveladservices.com
+clientservices.googleapis.com
+dl.google.com
+dl.l.google.com
+update.googleapis.com
+translate.googleapis.com
+fonts.googleapis.com
+fonts.gstatic.com
+mtalk.google.com

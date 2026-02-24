@@ -35,3 +35,10 @@ apple-relay.fastly-edge.com
 guzzoni.apple.com
 cp4.cloudflare.com
 gspe1-ssl.ls.apple.com
+agoogleaday.com
+gs-discuss.com
+gtricks.com
+goo.gl
+youtube.com
+ytimg.com
+yt3.ggpht.com
