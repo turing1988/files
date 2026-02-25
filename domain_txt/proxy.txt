@@ -30,7 +30,6 @@
 .9001700.com
 .91meizhi.com
 .xnimg.cn
-.github.io
 .aboluowang.com
 .aboutgfw.com
 .acpi.info
@@ -249,7 +248,6 @@
 .coindesk.com
 .coineal.com
 .cointracker.io
-.githubapp.com
 .comefromchina.com
 .coolaler.com
 .coolder.com
@@ -344,7 +342,6 @@
 .dysfz.cc
 .dzze.com
 .e-gold.com
-.gitbooks.io
 .easyweb.hk
 .ebookbrowse.com
 .ebookee.com
@@ -481,9 +478,6 @@
 .ggssl.com
 .gifeye.com
 .gimp.org
-.githubmemory.com
-.githubusercontent.com
-.gitscout.com
 .globaljihad.net
 .globalmuseumoncommunism.org
 .globalvoicesonline.org
@@ -493,7 +487,6 @@
 .gongminliliang.com
 .gongwt.com
 .good.news
-.googletagmanager.com
 .gopetition.com
 .gospelherald.com
 .gpass1.com
@@ -1117,8 +1110,6 @@
 .sysresccd.org
 .sytes.net
 .szbbs.net
-.t.co
-.t.me
 .t35.com
 .t66y.com
 .taa-usa.org
@@ -1298,7 +1289,6 @@
 .willyoucurryme.com
 .winwhispers.info
 .wisevid.com
-.wise.com
 .witopia.net
 .makeding.com
 .wolfax.com
@@ -1434,12 +1424,9 @@
 .redian.news
 .xlog.app
 .iheart.com
-.perplexity.ai
 .cdn.hinet.net
 .4gtv.tv
-.hinet.net
 .ofiii.com
-.googlevideo.com
 .youtube.com
 .mytvsuper.com
 .tvb.com
@@ -1447,7 +1434,6 @@
 .livednow.org
 .wx.sb
 .iill.top
-.x.ai
 .8world.com
 .bulianglin.com
 .catman.app
@@ -1469,5 +1455,3 @@
 .xunihao.net
 .ycombinator.com
 .leonx.cn
-.grokipedia.com
-.gemini.google.com
