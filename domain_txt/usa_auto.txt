@@ -20,7 +20,12 @@
 .techcrunch.com
 .imtoken.com
 .github.com
+.x.ai
+.x.com
 .grok.com
+.t.co
+.twitter.com
+.twimg.com
 .javdb.com
 .openai.com
 .githubusercontent.com
