@@ -1,3 +1,5 @@
 .wise.com
-.perplexity.ai
-
+.okx.com
+pscdn.co
+scdn.co
+spoti.fi

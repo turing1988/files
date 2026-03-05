@@ -40,6 +40,7 @@
 .apple-relay.apple.com
 .apple-relay.cloudflare.com
 .apple-relay.fastly-edge.com
+.perplexity.ai
 smoot.apple.com
 apple-relay.apple.com
 apple-relay.cloudflare.com
