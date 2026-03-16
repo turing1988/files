@@ -1,5 +1,5 @@
 payload:
-  - '+.google'
+  - '+.google.+'
   - '+.g.co'
   - '+.gstatic'
   - '+.claude'
