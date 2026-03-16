@@ -1,6 +1,6 @@
 payload:
-  - '+.google.+'
+  - 'google'
   - '+.g.co'
-  - '+.gstatic.+'
-  - '+.claude.+'
-  - '+.anthropic.+'
+  - 'gstatic'
+  - 'claude'
+  - 'anthropic'
