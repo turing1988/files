@@ -1,7 +1,7 @@
 payload:
   - '+.wise.com'
   - '+.okx.com'
-  - '+.pscdn.co.+'
-  - '+.scdn.co.+'
-  - '+.spoti.fi.+'
-  - '+.spotify.+'
+  - '+.pscdn.co'
+  - '+.scdn.co'
+  - '+.spoti.fi'
+  - '+.spotify'
