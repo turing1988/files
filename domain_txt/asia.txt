@@ -1,5 +1,1 @@
-google
 g.co
-gstatic
-claude
-anthropic

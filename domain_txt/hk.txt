@@ -3,4 +3,3 @@
 pscdn.co
 scdn.co
 spoti.fi
-spotify
