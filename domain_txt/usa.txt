@@ -1,3 +1,4 @@
+cdn.usefathom.com
 .coinbase.com
 .kraken.com
 .etana.com

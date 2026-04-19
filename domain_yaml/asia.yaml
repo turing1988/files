@@ -1,5 +1,4 @@
 payload:
-  - '+.cdn.usefathom.com'
   - '+.g.co'
   - '+.localbitcoins.com'
   - '+.otcbtc.com'
@@ -38,6 +37,7 @@ payload:
   - '+.aicoin.net.cn'
   - '+.coinmarketcap.com'
   - '+.saasexch.cc'
+  - '+.goo.gl'
   - '+.openai.com'
   - '+.perplexity.ai'
   - '+.smoot.apple.com'
@@ -46,4 +46,3 @@ payload:
   - '+.apple-relay.fastly-edge.com'
   - '+.guzzoni.apple.com'
   - '+.cp4.cloudflare.com'
-  - '+.goo.gl'
