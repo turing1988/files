@@ -1531,3 +1531,11 @@
 .zuola.com
 .zyzc9.com
 .zzzfun.com
+.x.ai
+.x.com
+.grok.com
+.grokipedia.com
+.t.co
+.t.me
+.twitter.com
+.twimg.com
