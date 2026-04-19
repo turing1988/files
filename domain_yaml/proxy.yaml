@@ -1502,6 +1502,7 @@ payload:
   - '+.youthbao.com'
   - '+.youtube.com'
   - '+.youversion.com'
+  - '+.ytimg.com'
   - '+.yt-dl.org'
   - '+.ytht.net'
   - '+.yuanming.net'
@@ -1539,4 +1540,4 @@ payload:
   - '+.t.co'
   - '+.t.me'
   - '+.twitter.com'
-  - '+.twimg.com' 
+  - '+.twimg.com'
