@@ -7,5 +7,6 @@ for txt_f in `ls -1 $txt_d`; do
     yaml_p=$yaml_d/`sed 's/.txt//' <<<${txt_f}`.yaml
     echo "payload:" >$yaml_p
     # sed -E "/^\s*$/d;/^#\s*/d;s/^(\..*)$/+\1/g; s/^([^.+]+\..*)$/+.\1/g; s/^([^.]*)$/+.\1.+/g;s/^/  \- '/g;s/$/'/g" $txt_p >>$yaml_p
-    sed -E "/^\s*$/d;/^#\s*/d;s/^(\..*)$/+\1/g; s/^([^.+]+\..*)$/+.\1/g;s/^/  \- '/g;s/$/'/g" $txt_p >>$yaml_p
+    # sed -E "/^\s*$/d;/^#\s*/d;s/^(\..*)$/+\1/g; s/^([^.+]+\..*)$/+.\1/g;s/^/  \- '/g;s/$/'/g" $txt_p >>$yaml_p
+    sed -E "/^\s*$/d;/^#\s*/d;s/^(\..*)$/+\1/g; s/^([^.+].*)$/\1/g;s/^/  \- '/g;s/$/'/g" $txt_p >>$yaml_p
 done

@@ -1,5 +1,5 @@
-.wise.com
-.okx.com
-pscdn.co
-scdn.co
-spoti.fi
++.wise.com
++.okx.com
++.pscdn.co
++.scdn.co
++.spoti.fi
