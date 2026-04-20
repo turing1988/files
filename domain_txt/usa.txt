@@ -21,7 +21,6 @@ cdn.usefathom.com
 .techcrunch.com
 .imtoken.com
 .javdb.com
-.gspe1-ssl.ls.apple.com
 .agoogleaday.com
 .gs-discuss.com
 .gtricks.com
