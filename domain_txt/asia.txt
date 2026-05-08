@@ -43,3 +43,5 @@
 .uniswap.org
 .xrpl.org
 .xrpvalue.com
+.shuzijumin.com
+.jable.tv

@@ -316,3 +316,10 @@
 .zerotier.com
 .zhenbo.org
 .zzzfun.com
+.jsdelivr.net
+.broadlyjukeboxunrevised.com
+.feiniaoyun.xyz
+.skyvpnx.com
+.fawncloud.one
+.lmvipaff.com 
+.clashsubs.com
