@@ -208,7 +208,6 @@
 .polymedsrl.it
 .posterous.com
 .public-dns.tk
-.qemu.org
 .qkl123.com
 .rapidsharedata.com
 .redian.news
@@ -322,5 +321,4 @@
 .skyvpnx.com
 .fawncloud.one
 .clashsubs.com
-.lmvipaff.com 
-.facebook.com
+.lmvipaff.com
