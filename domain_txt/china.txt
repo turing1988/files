@@ -1,3 +1,4 @@
 .wise.com
 .okx.com
 .nifulei.com
+.linuxiac.com
