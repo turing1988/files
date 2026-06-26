@@ -3,3 +3,4 @@
 .nifulei.com
 .linuxiac.com
 fre
+.freesmth.net
