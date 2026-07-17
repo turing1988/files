@@ -7,7 +7,5 @@ googleadservices.com
 # Moat Ads Services
 moatads.com
 moatads.com.edgekey.net
-
 .med.etoro.com
-
-app-analytics-services.com
+# app-analytics-services.com
