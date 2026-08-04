@@ -322,3 +322,4 @@
 .fawncloud.one
 .clashsubs.com
 .lmvipaff.com
+.docker.io
