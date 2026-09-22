@@ -38,3 +38,6 @@ payload:
   - '+.apple-relay.fastly-edge.com'
   - '+.apple-relay.gateway.icloud.com'
   - '+.apple-relay.mask.apple-dns.net'
+  - '+.meta.ai'
+  - '+.meta.com'
+  - '+.metaaivm.com'
