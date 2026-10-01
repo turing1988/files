@@ -47,3 +47,4 @@
 .meta.com
 .metaaivm.com
 .muse.ai
+.facebook.com
