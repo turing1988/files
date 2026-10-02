@@ -29,7 +29,6 @@ payload:
   - '+.gspel-ssl.ls.apple.com'
   - '+.smoot.apple.com'
   - '+.guzzoni.apple.com'
-  - '+.gateway.icloud.com'
   - '+.cp4.cloudflare.com'
   - '+.apple-relay.apple.com'
   - '+.apple-relay.akamaized.net'
