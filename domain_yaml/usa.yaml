@@ -28,7 +28,6 @@ payload:
   - '+.ls.apple.com'
   - '+.gspel-ssl.ls.apple.com'
   - '+.smoot.apple.com'
-  - '+.apps.mzstatic.com'
   - '+.guzzoni.apple.com'
   - '+.gateway.icloud.com'
   - '+.cp4.cloudflare.com'
