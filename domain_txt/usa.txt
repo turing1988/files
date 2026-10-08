@@ -42,8 +42,8 @@
 #.mask-t.apple-dns.net
 #.mask-api.icl.cloud.com
 #.mask-api.fe.apple-dns.net
-.meta.ai
 .meta.com
 .metaaivm.com
 .muse.ai
-.facebook.com
+.withpersona.com
+.riskified.com

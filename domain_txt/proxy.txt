@@ -325,3 +325,4 @@
 .lmvipaff.com
 .docker.io
 .docker.com
+.chiguaqunzhong.com
