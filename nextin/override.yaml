@@ -126,7 +126,7 @@ rules:
   - PROCESS-NAME,Spotify,SGP
   - GEOSITE,private,DIRECT
   - RULE-SET,my_direct,DIRECT
-  - AND,((NETWORK,UDP),(DST-PORT,443/4483/9305)),REJECT
+  #- AND,((NETWORK,UDP),(DST-PORT,443/4483/9305)),REJECT
   - GEOSITE,category-ads-all,REJECT
   - RULE-SET,usa,USA
   - RULE-SET,euro,EURO
