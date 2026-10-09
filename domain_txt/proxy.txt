@@ -320,3 +320,4 @@ feiniaoyun
 skyvpn
 skyxcloud
 .equaldcdn.com
+.esimadvice.com
