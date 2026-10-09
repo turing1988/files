@@ -82,32 +82,32 @@ proxy-groups:
 rule-providers:
   my_direct:
     behavior: classical
-    interval: 86400
+    interval: 21600
     type: http
     url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/direct.yaml'
   my_proxy:
     behavior: classical
-    interval: 86400
+    interval: 21600
     type: http
     url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/proxy.yaml'
   china:
     behavior: classical
-    interval: 86400
+    interval: 21600
     type: http
     url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/china.yaml'
   asia:
     behavior: classical
-    interval: 86400
+    interval: 21600
     type: http
     url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/asia.yaml'
   euro:
     behavior: classical
-    interval: 86400
+    interval: 21600
     type: http
     url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/euro.yaml'
   usa:
     behavior: classical
-    interval: 86400
+    interval: 21600
     type: http
     url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/usa.yaml'
   proxy:
@@ -124,9 +124,9 @@ rule-providers:
     
 rules:
   - PROCESS-NAME,Spotify,SGP
+  - GEOIP,private,DIRECT
   - GEOSITE,private,DIRECT
   - RULE-SET,my_direct,DIRECT
-  #- AND,((NETWORK,UDP),(DST-PORT,443/4483/9305)),REJECT
   - GEOSITE,category-ads-all,REJECT
   - RULE-SET,usa,USA
   - RULE-SET,euro,EURO
@@ -135,14 +135,15 @@ rules:
   - RULE-SET,my_proxy,PROXY
   - GEOSITE,apple-intelligence,AI
   - GEOSITE,category-ai-!cn,AI
+  - GEOSITE,google,AI
   - GEOSITE,category-porn,JP
   - GEOIP,telegram,JP
   - GEOSITE,telegram,JP
   - GEOSITE,spotify,SGP
   - GEOSITE,github,ASIA
-  - GEOSITE,google,USA
   - RULE-SET,broker,HKG
   - RULE-SET,proxy,PROXY
+  - GEOSITE,cn,DIRECT
   - GEOSITE,geolocation-!cn,PROXY
   - GEOIP,JP,JP,no-resolve
   - GEOIP,CN,DIRECT,no-resolve
