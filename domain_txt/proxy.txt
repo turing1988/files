@@ -320,4 +320,4 @@ feiniaoyun
 skyvpn
 skyxcloud
 .equaldcdn.com
-.miaona.co
+miaona
