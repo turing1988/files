@@ -321,3 +321,5 @@ skyvpn
 skyxcloud
 .equaldcdn.com
 miaona
+mojie.cyou
+xmrth
