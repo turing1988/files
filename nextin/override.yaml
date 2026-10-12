@@ -1,3 +1,120 @@
 x-nextin:
   mode: subscription-template
   name: "Main"
+proxy-groups:
+  - name: PROXY
+    tolerance: 3
+    interval: 600
+    type: url-test
+    include-all: true
+    url: 'https://www.gstatic.com/generate_204'
+    filter: ^(?!.*(?:([：:，]|流量|套餐|到期|重置|Traffic|Expire|订阅|过滤|不代理|剩余|官网|电报))).*$
+    icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Universal/Auto_Speed.png
+  - name: ASIA
+    type: url-test
+    include-all: true
+    filter: (?i)日本|JP|Japan|新加坡|Singapore|SGP|狮城|马来|Malaysia|韩国|Korea|印度|India
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
+  - name: EURO
+    type: url-test
+    include-all: true
+    filter: (?i)英国|UK|土耳|Turkey|阿根|Argentina|德国|荷兰|澳|俄罗斯
+    icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/European_Union.png
+  - name: CHINA
+    type: url-test
+    include-all: true
+    filter: (?i)HK|香港|Hong.?Kong|台湾|TW|Tai.?Wan
+    icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/China.png
+  - name: USA
+    type: url-test
+    include-all: true
+    filter: (?i)美国|US|United.?States|加拿大|Canada
+    icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/United_States.png
+  - name: JP
+    hidden: true
+    type: url-test
+    include-all: true
+    filter: (?i)日本|JP|Japan
+    icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Japan.png
+  - name: HKG
+    hidden: true
+    type: url-test
+    include-all: true
+    filter: (?i)香港|HK|Hong.?Kong
+    icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Hong_Kong.png
+  - name: SGP
+    hidden: true
+    type: url-test
+    include-all: true
+    filter: (?i)新加坡|Singapore|SGP|狮城
+    icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Singapore.png
+  - name: PURE_USA
+    type: url-test
+    include-all: true
+    filter: (?i)(US|(美国.*(?:(aws|中继))))
+    icon: https://fastly.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/openai.png
+rule-provides:
+  my_direct:
+    behavior: classical
+    interval: 21600
+    type: http
+    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/direct.yaml'
+  my_proxy:
+    behavior: classical
+    interval: 21600
+    type: http
+    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/proxy.yaml'
+  china:
+    behavior: classical
+    interval: 21600
+    type: http
+    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/china.yaml'
+  asia:
+    behavior: classical
+    interval: 21600
+    type: http
+    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/asia.yaml'
+  euro:
+    behavior: classical
+    interval: 21600
+    type: http
+    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/euro.yaml'
+  usa:
+    behavior: classical
+    interval: 21600
+    type: http
+    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/usa.yaml'
+  proxy:
+    type: http
+    behavior: classical
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical.yaml'
+    format: yaml
+  broker:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Clash/Broker.yaml"
+rules:
+  - GEOSITE,netflix,PURE_USA
+  - PROCESS-NAME,Spotify,SGP
+  - GEOSITE,private,DIRECT
+  - RULE-SET,my_direct,DIRECT
+  - GEOSITE,category-ads-all,REJECT
+  - RULE-SET,usa,USA
+  - RULE-SET,euro,EURO
+  - RULE-SET,asia,ASIA
+  - RULE-SET,china,CHINA
+  - RULE-SET,my_proxy,PROXY
+  - GEOSITE,apple-intelligence,PURE_USA
+  - GEOSITE,category-ai-!cn,PURE_USA
+  - GEOSITE,google,PURE_USA
+  - GEOSITE,category-porn,JP
+  - GEOSITE,telegram,JP
+  - GEOSITE,spotify,SGP
+  - GEOSITE,github,CHINA
+  - RULE-SET,broker,HKG
+  - RULE-SET,proxy,PROXY
+  - GEOIP,telegram,JP
+  - GEOIP,JP,JP,no-resolve
+  - GEOIP,private,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT,no-resolve
+  - MATCH,DIRECT
