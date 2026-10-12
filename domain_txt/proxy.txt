@@ -322,4 +322,4 @@ skyxcloud
 .equaldcdn.com
 .gtoyes.com
 miaona
-mojie.cyou.github.com
+mojie.cyou
