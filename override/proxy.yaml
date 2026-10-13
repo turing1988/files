@@ -130,7 +130,7 @@ rules:
   - GEOSITE,netflix,PURE_USA
   - PROCESS-NAME,Spotify,SGP
   - GEOSITE,private,DIRECT
-  - RULE-SET,direct,DIRECT
+  - RULE-SET,my_direct,DIRECT
   - GEOSITE,category-ads-all,REJECT
   - RULE-SET,usa,USA
   - RULE-SET,euro,EURO
