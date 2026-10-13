@@ -60,7 +60,8 @@ rule-provides:
     interval: 21600
     behavior: classical
     path: ./rules/my_direct.yaml
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/direct.yaml'
+    url: https://cdn.jsdelivr.net/gh/turing1988/files@main/domain_classical/direct.yaml
+    #url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/direct.yaml'
   my_proxy:
     type: http
     format: yaml
