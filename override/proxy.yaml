@@ -34,8 +34,8 @@ proxy-groups:
     type: url-test
     include-all: true
     url: 'https://www.gstatic.com/generate_204'
-    filter: ^(?!.*(?:([：:，]|流量|套餐|到期|重置|Traffic|Expire|订阅|过滤|不代理|剩余|官网|电报))).*$
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Universal/Auto_Speed.png
+    filter: ^(?!.*(?:([：:，]|流量|套餐|到期|重置|Traffic|Expire|订阅|过滤|不代理|剩余|官网|电报))).*$
   - name: ASIA
     type: url-test
     include-all: true
@@ -81,50 +81,56 @@ proxy-groups:
     icon: https://fastly.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/openai.png
 rule-provides:
   my_direct:
-    path: direct.yaml
-    behavior: classical
-    interval: 21600
     type: http
+    format: yaml
+    interval: 21600
+    behavior: classical
     url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/direct.yaml'
   my_proxy:
-    behavior: classical
-    interval: 21600
     type: http
+    format: yaml
+    interval: 21600
+    behavior: classical
     url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/proxy.yaml'
   china:
-    behavior: classical
-    interval: 21600
     type: http
+    format: yaml
+    interval: 21600
+    behavior: classical
     url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/china.yaml'
   asia:
-    behavior: classical
-    interval: 21600
     type: http
+    format: yaml
+    interval: 21600
+    behavior: classical
     url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/asia.yaml'
   euro:
-    behavior: classical
-    interval: 21600
     type: http
+    format: yaml
+    interval: 21600
+    behavior: classical
     url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/euro.yaml'
   usa:
-    behavior: classical
-    interval: 21600
     type: http
+    format: yaml
+    interval: 21600
+    behavior: classical
     url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/usa.yaml'
   proxy:
     type: http
+    format: yaml
     behavior: classical
     url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical.yaml'
-    format: yaml
   broker:
     type: http
+    format: yaml
     behavior: classical
     url: "https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Clash/Broker.yaml"
 rules:
   - GEOSITE,netflix,PURE_USA
   - PROCESS-NAME,Spotify,SGP
   - GEOSITE,private,DIRECT
-  - RULE-SET,my_direct,DIRECT
+  - RULE-SET,direct,DIRECT
   - GEOSITE,category-ads-all,REJECT
   - RULE-SET,usa,USA
   - RULE-SET,euro,EURO
