@@ -1,6 +1,8 @@
 x-nextin:
   name: "Main"
   mode: subscription-template
+proxies:
+  - []
 proxy-groups:
   - name: PROXY
     tolerance: 3
