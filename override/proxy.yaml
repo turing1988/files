@@ -81,6 +81,7 @@ proxy-groups:
     icon: https://fastly.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/openai.png
 rule-provides:
   my_direct:
+    path: direct.yaml
     behavior: classical
     interval: 21600
     type: http
