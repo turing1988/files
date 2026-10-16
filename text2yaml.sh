@@ -9,8 +9,8 @@ for txt_f in `ls -1 $txt_d`; do
     txt_p=$txt_d/$txt_f
     txt_p_m=$txt_d_m/$txt_f
     list_p=$list_d/$txt_f
-    yaml_p=$yaml_d/`sed 's/.txt//' <<<${txt_f}`.yaml
-    classical_p=$classical_d/`sed 's/.txt//' <<<${txt_f}`.yaml
+    yaml_p=$yaml_d/`sed 's/.list//' <<<${txt_f}`.yaml
+    classical_p=$classical_d/`sed 's/.list//' <<<${txt_f}`.yaml
     echo -n $txt_p_m
     sed -E "/^\s*$/d;/^#\s*/d;s/^(\..*)$/+\1/g;s/^([^.+].*)$/\1/g" $txt_p >>$txt_p_m
     echo "payload:" >$yaml_p
