@@ -1,8 +1,8 @@
 #!/bin/bash
-txt_d=domain_txt
+txt_d=domain_text
 yaml_d=domain_yaml
-list_d=domain_list
-classical_d=domain_classical
+list_d=classical_text
+classical_d=classical_yaml
 mkdir -p $yaml_d $list_d $classical_d
 for txt_f in `ls -1 $txt_d`; do
     txt_p=$txt_d/$txt_f
