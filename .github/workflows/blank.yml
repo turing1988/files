@@ -24,8 +24,8 @@ jobs:
       - uses: actions/checkout@main
 
       # Runs a single command using the runners shell
-      - name: txt2yaml
-        run: ./txt2yaml.sh
+      - name: text2yaml
+        run: ./text2yaml.sh
 
       # Runs a set of commands using the runners shell
       - name: Auto Commit and Push
