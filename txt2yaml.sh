@@ -1,5 +1,5 @@
 #!/bin/bash
-txt_d=domain_text
+txt_d=domain_text_loon
 yaml_d=domain_yaml
 txt_d_m=domain_text_mihomo
 list_d=classical_text
