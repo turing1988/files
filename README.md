@@ -7,12 +7,18 @@ Mihomo只支持RULE-SET规则集合类型，不支持DOMAIN-SET类型; 它分为
 
 ## 通配区别
 如果要匹配google.comwww.google.com 123.mail.google.com 三种字符串
-mihomo的text格式描述方式如下，yaml方式不赘述。
+
+mihomo的text格式描述如下，yaml方式不赘述。
+
 behavior=domain时: +.google.com
+
 behavior=classical时: DOMAIN-SUFFIX,google.com
 
+
 loon/surge的描述方式如下
+
 DOMAINT-SET: .google.com
+
 RULE-SET: DOMAIN-SUFFIX,google.com
 
 ## 目录说明
