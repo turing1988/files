@@ -163,13 +163,13 @@ rules:
   - RULE-SET,asia,ASIA
   - RULE-SET,china,CHINA
   - RULE-SET,my_proxy,PROXY
-  - RULE,google,PURE_USA
+  - RULE-SET,google,PURE_USA
   - GEOSITE,apple-intelligence,PURE_USA
   - GEOSITE,category-ai-!cn,PURE_USA
   - GEOSITE,category-porn,JP
-  - RULE,telegram,JP
-  - RULE,spotify,SGP
-  - RULE,github,CHINA
+  - RULE-SET,telegram,JP
+  - RULE-SET,spotify,SGP
+  - RULE-SET,github,CHINA
   - RULE-SET,broker,HKG
   - RULE-SET,proxy,PROXY
   - GEOIP,JP,JP,no-resolve
