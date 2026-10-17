@@ -129,28 +129,50 @@ rule-providers:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical.yaml
+  google:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google_No_Resolve.yaml
+  github:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Github/Github_No_Resolve.yaml
+  spotify:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify_No_Resolve.yaml
+  telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram_No_Resolve.yaml
+  private:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan_No_Resolve.yaml
+  ads:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml
 rules:
   - RULE-SET,netflix,PURE_USA
-  - GEOSITE,private,DIRECT
+  - RULE-SET,private,DIRECT
   - RULE-SET,my_direct,DIRECT
-  - GEOSITE,category-ads-all,REJECT
+  - RULE-SET,ads,REJECT
   - RULE-SET,usa,USA
   - RULE-SET,euro,EURO
   - RULE-SET,asia,ASIA
   - RULE-SET,china,CHINA
   - RULE-SET,my_proxy,PROXY
+  - RULE,google,PURE_USA
   - GEOSITE,apple-intelligence,PURE_USA
   - GEOSITE,category-ai-!cn,PURE_USA
-  - GEOSITE,google,PURE_USA
   - GEOSITE,category-porn,JP
-  - GEOSITE,telegram,JP
-  - GEOSITE,spotify,SGP
-  - GEOSITE,github,CHINA
+  - RULE,telegram,JP
+  - RULE,spotify,SGP
+  - RULE,github,CHINA
   - RULE-SET,broker,HKG
   - RULE-SET,proxy,PROXY
-  - GEOIP,telegram,JP
   - GEOIP,JP,JP,no-resolve
-  - GEOIP,private,DIRECT,no-resolve
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,DIRECT
 http:
