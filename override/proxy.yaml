@@ -91,32 +91,32 @@ rule-providers:
     type: http
     interval: 21600
     behavior: classical
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/direct.yaml'
+    url: 'https://raw.githubusercontent.com/turing1988/files/main/classical_yaml/direct.yaml'
   my_proxy:
     type: http
     interval: 21600
     behavior: classical
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/proxy.yaml'
+    url: 'https://raw.githubusercontent.com/turing1988/files/main/classical_yaml/proxy.yaml'
   china:
     type: http
     interval: 21600
     behavior: classical
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/china.yaml'
+    url: 'https://raw.githubusercontent.com/turing1988/files/main/classical_yaml/china.yaml'
   asia:
     type: http
     interval: 21600
     behavior: classical
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/asia.yaml'
+    url: 'https://raw.githubusercontent.com/turing1988/files/main/classical_yaml/asia.yaml'
   euro:
     type: http
     interval: 21600
     behavior: classical
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/euro.yaml'
+    url: 'https://raw.githubusercontent.com/turing1988/files/main/classical_yaml/euro.yaml'
   usa:
     type: http
     interval: 21600
     behavior: classical
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/domain_classical/usa.yaml'
+    url: 'https://raw.githubusercontent.com/turing1988/files/main/classical_yaml/usa.yaml'
   proxy:
     type: http
     behavior: classical
@@ -125,9 +125,12 @@ rule-providers:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Clash/Broker.yaml"
+  netflix:
+    type: http
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical.yaml
+    behavior: classical
 rules:
   - GEOSITE,netflix,PURE_USA
-  - PROCESS-NAME,Spotify,SGP
   - GEOSITE,private,DIRECT
   - RULE-SET,my_direct,DIRECT
   - GEOSITE,category-ads-all,REJECT
