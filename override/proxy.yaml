@@ -160,6 +160,7 @@ rule-providers:
   gfw:
     type: http
     behavior: classical
+    format: text
     url: https://direct.sleepstars.de/geosite/gfw
 rules:
   - RULE-SET,private,DIRECT
