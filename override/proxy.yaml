@@ -29,10 +29,6 @@ dns:
 experimental:
   ignore-resolve-fail: true
 geodata-mode: true
-#  All:
-#    type: http
-#    interval: 21600
-#    url: https://sub.store/download/collection/All?target=ClashMeta&prettyYaml=true
 proxy-groups:
   - name: PROXY
     tolerance: 3
