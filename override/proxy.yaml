@@ -81,86 +81,96 @@ proxy-groups:
     include-all: true
     filter: (?i)(US|(美国.*(?:(aws|中继))))
     icon: https://fastly.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/openai.png
-  - name: GLOBAL
-    type: select
-    hidden: true
-    include-all: true
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
 rule-providers:
   my_direct:
     type: http
     interval: 21600
+    format: text
     behavior: classical
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/classical_yaml/direct.yaml'
+    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/direct.list
   my_proxy:
     type: http
     interval: 21600
+    format: text
     behavior: classical
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/classical_yaml/proxy.yaml'
+    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/proxy.list
   china:
     type: http
     interval: 21600
+    format: text
     behavior: classical
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/classical_yaml/china.yaml'
+    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/china.list
   asia:
     type: http
     interval: 21600
+    format: text
     behavior: classical
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/classical_yaml/asia.yaml'
+    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/asia.list
   euro:
     type: http
     interval: 21600
+    format: text
     behavior: classical
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/classical_yaml/euro.yaml'
+    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/euro.list
   usa:
     type: http
     interval: 21600
+    format: text
     behavior: classical
-    url: 'https://raw.githubusercontent.com/turing1988/files/main/classical_yaml/usa.yaml'
+    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/usa.list
   proxy:
     type: http
+    format: text
     behavior: classical
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical.yaml'
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy.list
   broker:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Clash/Broker.yaml"
+    url: https://raw.githubusercontent.com/forecho/broker-rules/main/rule/Clash/Broker.yaml
   github:
     type: http
+    format: text
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub_No_Resolve.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.list
   netflix:
     type: http
+    format: text
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list
   google:
     type: http
+    format: text
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google_No_Resolve.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list
   youtube:
     type: http
+    format: text
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube_No_Resolve.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list
   spotify:
     type: http
+    format: text
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify_No_Resolve.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list
   telegram:
     type: http
+    format: text
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram_No_Resolve.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list
   private:
     type: http
+    format: text
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan_No_Resolve.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.list
   ads:
     type: http
+    format: text
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Classical_No_Resolve.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite.list
   gfw:
     type: http
-    behavior: classical
     format: text
+    behavior: classical
     url: https://direct.sleepstars.de/geosite/gfw
 rules:
   - RULE-SET,private,DIRECT

@@ -1,8 +1,6 @@
 # files仓库说明
 
-
-
-本仓库用于描述Mihomo和Loon
+本仓库用于描述Mihomo和Loon 支持的规则集合，推荐使用 RULE-SET，classical_text 来作为通用的规则集合描述。
 
 
 
@@ -12,15 +10,11 @@ Mihomo只支持RULE-SET规则集合类型，不支持DOMAIN-SET;
 
 RULE-SET的解析行分为两种，即behavior是domain或classical；描述格式也分为两种text和yaml。
 
-
-
 Loon/Surge支持RULE-SET与DOMAIN-SET两种规则集合类型，都只能使用text格式描述，不支持yaml格式。其中：
 
     DOMAIN-SET类似于Mihomo的behavior=domain+format=text，
-
+    
     RULE-SET类似于Mihomo的behavior=classical+format=text
-
-
 
 ## 域名通配符的区别
 
@@ -29,18 +23,14 @@ Loon/Surge支持RULE-SET与DOMAIN-SET两种规则集合类型，都只能使用t
 mihomo的text格式描述如下，yaml方式不赘述。
 
     behavior=domain时: +.google.com
-
+    
     behavior=classical时: DOMAIN-SUFFIX,google.com
-
-
 
 loon/surge的描述方式如下
 
     DOMAINT-SET: .google.com
-
-    RULE-SET: DOMAIN-SUFFIX,google.com
-
-## 
+    
+    RULE-SET: DOMAIN-SUFFIX,google.com 
 
 ## 目录说明
 
