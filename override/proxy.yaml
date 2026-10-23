@@ -11,21 +11,95 @@ log-level: warning
 dns:
   ipv6: true
   enable: true
-  enhanced-mode: fake-ip
   use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
   default-nameserver:
-    - 180.76.76.76
-    - 223.6.6.6
+    - 223.5.5.5
+    - 119.29.29.29
+    - 1.1.1.1
     - 8.8.8.8
     - system
   nameserver-policy:
-    '+.baidu-int.com': 10.21.155.22
     '+.baidu.com': 180.76.76.76
-  fake-ip-filter: ['*.lan', localhost.ptlogin2.qq.com]
-  nameserver: ['https://doh.pub/dns-query', 'tls://dot.pub', 'https://223.5.5.5/dns-query', 'https://223.6.6.6/dns-query', 'tls://dns.alidns.com', 'tls://223.5.5.5:853', 'tls://223.6.6.6:853']
-  fallback: ['https://doh.pub/dns-query', 'tls://dot.pub', 'https://223.5.5.5/dns-query', 'https://223.6.6.6/dns-query', 'tls://dns.alidns.com', 'tls://223.5.5.5:853', 'tls://223.6.6.6:853']
-  fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32]}
-  skip-cert-verify: false
+    '+.baidu-int.com': 10.21.155.22
+    "+.google.com": "https://dns.cloudflare.com/dns-query"
+    "+.googleapis.com": "https://dns.cloudflare.com/dns-query"
+    "+.googleapis.cn": "https://dns.cloudflare.com/dns-query"
+    "+.googlevideo.com": "https://dns.cloudflare.com/dns-query"
+    "+.gstatic.com": "https://dns.cloudflare.com/dns-query"
+    "+.youtube.com": "https://dns.cloudflare.com/dns-query"
+    "+.youtu.be": "https://dns.cloudflare.com/dns-query"
+    "+.facebook.com": "https://dns.cloudflare.com/dns-query"
+    "+.twitter.com": "https://dns.cloudflare.com/dns-query"
+    "+.x.com": "https://dns.cloudflare.com/dns-query"
+    "+.github.com": "https://dns.cloudflare.com/dns-query"
+    "+.githubusercontent.com": "https://dns.cloudflare.com/dns-query"
+    "+.openai.com": "https://dns.cloudflare.com/dns-query"
+    "+.chatgpt.com": "https://dns.cloudflare.com/dns-query"
+    "+.anthropic.com": "https://dns.cloudflare.com/dns-query"
+  nameserver:
+    - tls://dot.pub:853
+    - tls://dns.alidns.com:853
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  proxy-server-nameserver:
+    - tls://1.1.1.1:853
+    - tls://8.8.8.8:853
+    - https://dns.google/dns-query
+    - https://dns.cloudflare.com/dns-query
+  fallback:
+    - tls://1.1.1.1:853
+    - tls://8.8.8.8:853
+    - https://dns.google/dns-query
+    - https://dns.cloudflare.com/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    ipcidr:
+      - 0.0.0.0/8
+      - 10.0.0.0/8
+      - 100.64.0.0/10
+      - 127.0.0.0/8
+      - 169.254.0.0/16
+      - 172.16.0.0/12
+      - 192.168.0.0/16
+      - 224.0.0.0/4
+      - 240.0.0.0/4
+    domain:
+      - "+.google.com"
+      - "+.facebook.com"
+      - "+.youtube.com"
+      - "+.githubusercontent.com"
+      - "+.googlevideo.com"
+      - "+.googleapis.cn"
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+    - "*.localhost"
+    - "*.test"
+    - "localhost.ptlogin2.qq.com"
+    - 'cf.komect.net'
+    - '*.komect.net'
+    - 'ihr.hq.mogu'
+    - '*.hq.mogu'
+    - "+.stun.*.*"
+    - "+.stun.*.*.*"
+    - "+.stun.*.*.*.*"
+    - "lens.l.google.com"
+    - "*.srv.nintendo.net"
+    - "+.stun.playstation.net"
+    - "xbox.*.*.microsoft.com"
+    - "*.*.xboxlive.com"
+    - "+.msftncsi.com"
+    - "+.msftconnecttest.com"
+    - "+.sub.store"
+    - "+.push.apple.com"
+    - "+.sub-store.vercel.app"
+    - "+.baidu-int.com"
+    - "+.bcebos.com"
 experimental:
   ignore-resolve-fail: true
 geodata-mode: true
