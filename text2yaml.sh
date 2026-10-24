@@ -1,6 +1,6 @@
 #!/bin/bash
-d_t_l_d=domain_text_loon
-d_t_m_d=domain_text_mihomo
+d_t_l_d=domain_text/loon
+d_t_m_d=domain_text/mihomo
 c_t_d=classical_text
 mkdir -p $d_t_m_d $c_t_d
 for t_f in `ls -1 $d_t_l_d`; do
