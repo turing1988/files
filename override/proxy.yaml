@@ -39,7 +39,7 @@ dns:
     "+.chatgpt.com": "https://dns.cloudflare.com/dns-query"
     "+.anthropic.com": "https://dns.cloudflare.com/dns-query"
   nameserver:
-    - tls://dot.pub:853
+    - tls://doh.pub:853
     - tls://dns.alidns.com:853
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
@@ -48,6 +48,9 @@ dns:
     - tls://8.8.8.8:853
     - https://dns.google/dns-query
     - https://dns.cloudflare.com/dns-query
+    - https://fbdv1.apiv2.a047.com/api-v2
+    - https://fbdv1.web.ak005.com/api-v2
+    - https://fbdv1.llguangli25n.com/api-v2
   fallback:
     - tls://1.1.1.1:853
     - tls://8.8.8.8:853
@@ -153,7 +156,7 @@ proxy-groups:
   - name: PURE_USA
     type: url-test
     include-all: true
-    filter: (?i)(US|(美国.*(?:(aws|中继))))
+    filter: (?i)(US|(美国.*(?:(aws))))
     icon: https://fastly.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/openai.png
 rule-providers:
   my_direct:
