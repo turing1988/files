@@ -48,6 +48,9 @@ dns:
     - tls://8.8.8.8:853
     - https://dns.google/dns-query
     - https://dns.cloudflare.com/dns-query
+    - https://fbdv1.apiv2.a047.com/api-v2
+    - https://fbdv1.web.ak005.com/api-v2
+    - https://fbdv1.llguangli25n.com/api-v2
   fallback:
     - tls://1.1.1.1:853
     - tls://8.8.8.8:853
