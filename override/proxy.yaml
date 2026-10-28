@@ -156,7 +156,7 @@ proxy-groups:
   - name: PURE_USA
     type: url-test
     include-all: true
-    filter: (?i)(US|(美国.*(?:(aws))))
+    filter: (?i)(GPT|AI|US|(美国.*(?:(aws))))
     icon: https://fastly.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/openai.png
 rule-providers:
   my_direct:
