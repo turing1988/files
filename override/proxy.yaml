@@ -118,12 +118,12 @@ proxy-groups:
   - name: ASIA
     type: url-test
     include-all: true
-    filter: (?i)日本|JP|Japan|新加坡|Singapore|SGP|狮城|马来|Malaysia|韩国|Korea|印度|India
+    filter: (?i)日本|JP|Japan|新加坡|Singapore|SGP|狮城|马来|Malaysia|韩国|Korea|印度|India|东京|大阪
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
   - name: EURO
     type: url-test
     include-all: true
-    filter: (?i)英国|UK|土耳|Turkey|阿根|Argentina|德国|荷兰|澳|俄罗斯
+    filter: (?i)英国|UK|土耳|Turkey|阿根|Argentina|德国|荷兰|澳|俄罗斯|保加利亚|巴黎|西班牙
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/European_Union.png
   - name: CHINA
     type: url-test
@@ -133,13 +133,13 @@ proxy-groups:
   - name: USA
     type: url-test
     include-all: true
-    filter: (?i)美国|US|United.?States|加拿大|Canada
+    filter: (?i)美国|US|United.?States|加拿大|Canada|拉斯维加斯|洛杉矶|硅谷|达拉斯
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/United_States.png
   - name: JP
     hidden: true
     type: url-test
     include-all: true
-    filter: (?i)日本|JP|Japan
+    filter: (?i)日本|JP|Japan|东京|大阪
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Japan.png
   - name: HKG
     hidden: true
@@ -156,7 +156,7 @@ proxy-groups:
   - name: PURE_USA
     type: url-test
     include-all: true
-    filter: (?i)(US|(美国.*(?:(aws|AI|GPT))))
+    filter: (?i)(US|(美国.*(?:(aws|AI|GPT)))|拉斯维加斯|洛杉矶|硅谷|达拉斯)
     icon: https://fastly.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/openai.png
 rule-providers:
   my_direct:
