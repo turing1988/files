@@ -258,7 +258,6 @@ rules:
   - RULE-SET,asia,ASIA
   - RULE-SET,china,CHINA
   - RULE-SET,my_proxy,PROXY
-  - RULE-SET,github,CHINA
   - RULE-SET,youtube,CHINA
   - RULE-SET,netflix,PURE_USA
   - RULE-SET,google,PURE_USA
