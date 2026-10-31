@@ -118,7 +118,7 @@ proxy-groups:
   - name: ASIA
     type: url-test
     include-all: true
-    filter: (?i)日本|JP|Japan|新加坡|Singapore|SGP|狮城|马来|Malaysia|韩国|Korea|印度|India|东京|大阪
+    filter: (?i)日本|JP|Japan|新加坡|Singapore|SGP|狮城|马来|Malaysia|韩国|Korea|印度|India|东京|大阪|北海道
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
   - name: EURO
     type: url-test
@@ -139,7 +139,7 @@ proxy-groups:
     hidden: true
     type: url-test
     include-all: true
-    filter: (?i)日本|JP|Japan|东京|大阪
+    filter: (?i)日本|JP|Japan|东京|大阪|北海道
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Japan.png
   - name: HKG
     hidden: true
