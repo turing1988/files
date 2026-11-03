@@ -22,7 +22,7 @@ dns:
   nameserver-policy:
     '+.baidu.com': 180.76.76.76
     '+.baidu-int.com': 10.21.155.22
-    "geosite:gfw": "https://dns.cloudflare.com/dns-query"
+    "+.haitunt.org": "https://dns.cloudflare.com/dns-query"
     "+.google.com": "https://dns.cloudflare.com/dns-query"
     "+.googleapis.com": "https://dns.cloudflare.com/dns-query"
     "+.googleapis.cn": "https://dns.cloudflare.com/dns-query"
@@ -38,6 +38,7 @@ dns:
     "+.openai.com": "https://dns.cloudflare.com/dns-query"
     "+.chatgpt.com": "https://dns.cloudflare.com/dns-query"
     "+.anthropic.com": "https://dns.cloudflare.com/dns-query"
+    "geosite:gfw": "https://dns.cloudflare.com/dns-query"
   nameserver:
     - 180.76.76.76
     - 223.5.5.5
