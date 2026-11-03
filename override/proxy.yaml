@@ -118,7 +118,6 @@ proxy-groups:
     filter: (?i)美国|US|United.?States|加拿大|Canada|拉斯维加斯|洛杉矶|硅谷|达拉斯
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/United_States.png
   - name: JP
-    hidden: true
     type: url-test
     include-all: true
     filter: (?i)日本|JP|Japan|东京|大阪|北海道
@@ -130,7 +129,6 @@ proxy-groups:
     filter: (?i)香港|HK|Hong.?Kong
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Hong_Kong.png
   - name: SGP
-    hidden: true
     type: url-test
     include-all: true
     filter: (?i)新加坡|Singapore|SGP|狮城
