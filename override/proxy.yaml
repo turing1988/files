@@ -135,7 +135,7 @@ proxy-groups:
     include-all: true
     filter: (?i)新加坡|Singapore|SGP|狮城
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Singapore.png
-  - name: PURE_USA
+  - name: AI
     type: url-test
     include-all: true
     filter: (?i)(US|(美国.*(?:(aws|AI|GPT)))|拉斯维加斯|洛杉矶|硅谷|达拉斯)
@@ -236,10 +236,10 @@ rules:
   - RULE-SET,china,CHINA
   - RULE-SET,my_proxy,PROXY
   - RULE-SET,youtube,CHINA
-  - RULE-SET,netflix,PURE_USA
-  - RULE-SET,google,PURE_USA
-  - GEOSITE,apple-intelligence,PURE_USA
-  - GEOSITE,category-ai-!cn,PURE_USA
+  - RULE-SET,netflix,AI
+  - RULE-SET,google,AI
+  - GEOSITE,apple-intelligence,AI
+  - GEOSITE,category-ai-!cn,AI
   - GEOSITE,category-porn,JP
   - RULE-SET,telegram,JP
   - RULE-SET,spotify,SGP
