@@ -52,7 +52,6 @@ dns:
     - tls://8.8.8.8:853
     - https://dns.google/dns-query
     - https://dns.cloudflare.com/dns-query
-    - https://fbcg01.llguangli25n.com/api-v2/AQtDCD9xR3Ew8J7QWX9mR37ShQJG5ld6SHllJu1595PX7qgLWG0_xFXtssH8kVPRoqwXx1v5rGNi01Jeb307tTdo
   fallback:
     - tls://1.1.1.1:853
     - tls://8.8.8.8:853
