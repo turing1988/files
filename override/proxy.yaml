@@ -80,6 +80,7 @@ dns:
     - "+.sub.store"
     - "+.push.apple.com"
     - "+.sub-store.vercel.app"
+    - "+.baidu.com"
     - "+.baidu-int.com"
     - "+.bcebos.com"
     - "10.39.0.0/16"
