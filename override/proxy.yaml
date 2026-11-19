@@ -101,6 +101,16 @@ proxy-groups:
     include-all: true
     filter: (?i)日本|JP|Japan|新加坡|Singapore|SGP|狮城|马来|Malaysia|韩国|Korea|印度|India|东京|大阪|北海道
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
+  - name: EAST ASIA
+    type: url-test
+    include-all: true
+    filter: (?i)日本|JP|Japan|韩国|Korea|东京|大阪|北海道
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
+  - name: SOUTH ASIA
+    type: url-test
+    include-all: true
+    filter: (?i)新加坡|Singapore|SGP|狮城|马来|Malaysia|印度|India
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
   - name: EURO
     type: url-test
     include-all: true
@@ -162,6 +172,18 @@ rule-providers:
     format: text
     behavior: classical
     url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/asia.list
+  east asia:
+    type: http
+    interval: 21600
+    format: text
+    behavior: classical
+    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/east_asia.list
+  south asia:
+    type: http
+    interval: 21600
+    format: text
+    behavior: classical
+    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/south_asia.list
   euro:
     type: http
     interval: 21600
@@ -230,6 +252,8 @@ rules:
   - RULE-SET,usa,USA
   - RULE-SET,euro,EURO
   - RULE-SET,asia,ASIA
+  - RULE-SET,east asia,EAST ASIA
+  - RULE-SET,south asia,SOUTH ASIA
   - RULE-SET,china,CHINA
   - RULE-SET,my_proxy,PROXY
   - RULE-SET,youtube,CHINA
