@@ -101,16 +101,6 @@ proxy-groups:
     include-all: true
     filter: (?i)日本|JP|Japan|新加坡|Singapore|SGP|狮城|马来|Malaysia|韩国|Korea|印度|India|东京|大阪|北海道
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
-  - name: EAST ASIA
-    type: url-test
-    include-all: true
-    filter: (?i)日本|JP|Japan|韩国|Korea|东京|大阪|北海道
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
-  - name: SOUTH ASIA
-    type: url-test
-    include-all: true
-    filter: (?i)新加坡|Singapore|SGP|狮城|马来|Malaysia|印度|India
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
   - name: EURO
     type: url-test
     include-all: true
@@ -121,32 +111,38 @@ proxy-groups:
     include-all: true
     filter: (?i)HK|香港|Hong.?Kong|台湾|TW|Tai.?Wan
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/China.png
-  - name: USA
-    type: url-test
-    include-all: true
-    filter: (?i)美国|US|United.?States|加拿大|Canada|拉斯维加斯|洛杉矶|硅谷|达拉斯
-    icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/United_States.png
   - name: TW
     type: url-test
+    hidden: true
     include-all: true
     filter: (?i)台湾|TW|Tai.?Wan
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/China.png
-  - name: JP
-    type: url-test
-    include-all: true
-    filter: (?i)日本|JP|Japan|东京|大阪|北海道
-    icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Japan.png
   - name: HKG
     hidden: true
     type: url-test
     include-all: true
     filter: (?i)香港|HK|Hong.?Kong
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Hong_Kong.png
+  - name: JP
+    type: url-test
+    include-all: true
+    filter: (?i)日本|JP|Japan|东京|大阪|北海道
+    icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Japan.png
+  - name: KR
+    type: url-test
+    include-all: true
+    filter: (?i)韩国|Korea
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
   - name: SGP
     type: url-test
     include-all: true
     filter: (?i)新加坡|Singapore|SGP|狮城
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Singapore.png
+  - name: USA
+    type: url-test
+    include-all: true
+    filter: (?i)美国|US|United.?States|加拿大|Canada|拉斯维加斯|洛杉矶|硅谷|达拉斯
+    icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/United_States.png
   - name: AI
     type: url-test
     include-all: true
@@ -171,30 +167,18 @@ rule-providers:
     format: text
     behavior: classical
     url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/china.list
-  tw:
+  kr:
     type: http
     interval: 21600
     format: text
     behavior: classical
-    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/tw.list
+    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/kr.list
   asia:
     type: http
     interval: 21600
     format: text
     behavior: classical
     url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/asia.list
-  east asia:
-    type: http
-    interval: 21600
-    format: text
-    behavior: classical
-    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/east_asia.list
-  south asia:
-    type: http
-    interval: 21600
-    format: text
-    behavior: classical
-    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/south_asia.list
   euro:
     type: http
     interval: 21600
@@ -263,9 +247,7 @@ rules:
   - RULE-SET,usa,USA
   - RULE-SET,euro,EURO
   - RULE-SET,asia,ASIA
-  - RULE-SET,east asia,EAST ASIA
-  - RULE-SET,south asia,SOUTH ASIA
-  - RULE-SET,tw,TW
+  - RULE-SET,kr,KR
   - RULE-SET,china,CHINA
   - RULE-SET,my_proxy,PROXY
   - RULE-SET,youtube,CHINA
