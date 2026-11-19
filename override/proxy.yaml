@@ -126,6 +126,11 @@ proxy-groups:
     include-all: true
     filter: (?i)美国|US|United.?States|加拿大|Canada|拉斯维加斯|洛杉矶|硅谷|达拉斯
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/United_States.png
+  - name: TW
+    type: url-test
+    include-all: true
+    filter: (?i)台湾|TW|Tai.?Wan
+    icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/China.png
   - name: JP
     type: url-test
     include-all: true
@@ -166,6 +171,12 @@ rule-providers:
     format: text
     behavior: classical
     url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/china.list
+  tw:
+    type: http
+    interval: 21600
+    format: text
+    behavior: classical
+    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/tw.list
   asia:
     type: http
     interval: 21600
@@ -254,6 +265,7 @@ rules:
   - RULE-SET,asia,ASIA
   - RULE-SET,east asia,EAST ASIA
   - RULE-SET,south asia,SOUTH ASIA
+  - RULE-SET,tw,TW
   - RULE-SET,china,CHINA
   - RULE-SET,my_proxy,PROXY
   - RULE-SET,youtube,CHINA
