@@ -128,10 +128,11 @@ proxy-groups:
     include-all: true
     filter: (?i)日本|JP|Japan|东京|大阪|北海道
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Japan.png
-  - name: KR
+  - name: BYBIT
     type: url-test
+    hidden: true
     include-all: true
-    filter: (?i)韩国|Korea
+    filter: (?i)韩国|Korea|台湾|TW|Tai.?Wan|英国|UK|土耳|Turkey|阿根|Argentina|德国|荷兰|澳|保加利亚|巴黎|西班牙
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
   - name: SGP
     type: url-test
@@ -167,12 +168,12 @@ rule-providers:
     format: text
     behavior: classical
     url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/china.list
-  kr:
+  bybit:
     type: http
     interval: 21600
     format: text
     behavior: classical
-    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/kr.list
+    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/bybit.list
   asia:
     type: http
     interval: 21600
@@ -247,7 +248,7 @@ rules:
   - RULE-SET,usa,USA
   - RULE-SET,euro,EURO
   - RULE-SET,asia,ASIA
-  - RULE-SET,kr,KR
+  - RULE-SET,bybit,BYBIT
   - RULE-SET,china,CHINA
   - RULE-SET,my_proxy,PROXY
   - RULE-SET,youtube,CHINA
