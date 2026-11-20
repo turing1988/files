@@ -17,7 +17,6 @@ dns:
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
-    - system
   nameserver-policy:
     '+.baidu.com': 180.76.76.76
     '+.baidu-int.com': 10.21.155.22
@@ -38,6 +37,7 @@ dns:
     "+.chatgpt.com": "https://dns.cloudflare.com/dns-query"
     "+.anthropic.com": "https://dns.cloudflare.com/dns-query"
   nameserver:
+    - system
     - 223.5.5.5
     - https://dns.alidns.com/dns-query
   proxy-server-nameserver:
