@@ -227,46 +227,16 @@ rule-providers:
     format: text
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite.list
-  gfw:
-    type: http
-    format: text
-    behavior: classical
-    url: https://direct.sleepstars.de/geosite/gfw
-  binance:
-    type: http
-    format: text
-    behavior: classical
-    url: https://direct.sleepstars.de/geosite/binance
-  bybit:
-    type: http
-    format: text
-    behavior: classical
-    url: https://direct.sleepstars.de/geosite/bybit
-  kraken:
-    type: http
-    format: text
-    behavior: classical
-    url: https://direct.sleepstars.de/geosite/kraken
-  okx:
-    type: http
-    format: text
-    behavior: classical
-    url: https://direct.sleepstars.de/geosite/okx
-  crypto:
-    type: http
-    format: text
-    behavior: classical
-    url: https://direct.sleepstars.de/geosite/category-cryptocurrency
 rules:
   - DOMAIN-SUFFIX,bycsi.com,KR
   - DOMAIN-SUFFIX,kraken.zendesk.com,USA
   - RULE-SET,private,DIRECT
   - RULE-SET,my_direct,DIRECT
   - RULE-SET,ads,REJECT
-  - RULE-SET,okx,HKG
-  - RULE-SET,bybit,TW
-  - RULE-SET,kraken,USA
-  - RULE-SET,binance,JP
+  - GEOSITE,okx,HKG
+  - GEOSITE,bybit,TW
+  - GEOSITE,kraken,USA
+  - GEOSITE,binance,JP
   - RULE-SET,usa,USA
   - RULE-SET,euro,EURO
   - RULE-SET,asia,ASIA
@@ -276,13 +246,13 @@ rules:
   - RULE-SET,spotify,SGP
   - RULE-SET,broker,HKG
   - RULE-SET,youtube,CHINA
-  - RULE-SET,crypto,ASIA
   - RULE-SET,netflix,AI
   - RULE-SET,google,AI
   - GEOSITE,apple-intelligence,AI
   - GEOSITE,category-ai-!cn,AI
   - GEOSITE,category-porn,JP
-  - RULE-SET,gfw,PROXY
+  - GEOSITE,category-cryptocurrency,ASIA
+  - GEOSITE,gfw,PROXY
   - RULE-SET,proxy,PROXY
   - GEOIP,JP,JP,no-resolve
   - GEOIP,CN,DIRECT,no-resolve
