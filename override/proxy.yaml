@@ -18,6 +18,7 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
   nameserver-policy:
+    '+.skyvpn.bond': 1.1.1.1
     '+.baidu.com': 180.76.76.76
     '+.baidu-int.com': 10.21.155.22
     "+.haitunt.org": "https://dns.cloudflare.com/dns-query"
