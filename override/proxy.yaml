@@ -129,8 +129,6 @@ proxy-groups:
   - name: KR
     type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
-    use:
-      - All
     include-all: true
     filter: (?:)(韩|Korea)
   - name: SGP
@@ -167,12 +165,6 @@ rule-providers:
     format: text
     behavior: classical
     url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/china.list
-  bybit:
-    type: http
-    interval: 21600
-    format: text
-    behavior: classical
-    url: https://raw.githubusercontent.com/turing1988/files/main/classical_text/bybit.list
   asia:
     type: http
     interval: 21600
@@ -240,27 +232,56 @@ rule-providers:
     format: text
     behavior: classical
     url: https://direct.sleepstars.de/geosite/gfw
+  binance:
+    type: http
+    format: text
+    behavior: classical
+    url: https://direct.sleepstars.de/geosite/binance
+  bybit:
+    type: http
+    format: text
+    behavior: classical
+    url: https://direct.sleepstars.de/geosite/bybit
+  kraken:
+    type: http
+    format: text
+    behavior: classical
+    url: https://direct.sleepstars.de/geosite/kraken
+  okx:
+    type: http
+    format: text
+    behavior: classical
+    url: https://direct.sleepstars.de/geosite/okx
+  crypto:
+    type: http
+    format: text
+    behavior: classical
+    url: https://direct.sleepstars.de/geosite/category-cryptocurrency
 rules:
   - DOMAIN-SUFFIX,bycsi.com,KR
   - DOMAIN-SUFFIX,kraken.zendesk.com,USA
   - RULE-SET,private,DIRECT
   - RULE-SET,my_direct,DIRECT
   - RULE-SET,ads,REJECT
+  - RULE-SET,okx,HKG
+  - RULE-SET,bybit,TW
+  - RULE-SET,kraken,USA
+  - RULE-SET,binance,JP
   - RULE-SET,usa,USA
   - RULE-SET,euro,EURO
   - RULE-SET,asia,ASIA
-  - RULE-SET,bybit,KR
   - RULE-SET,china,CHINA
   - RULE-SET,my_proxy,PROXY
+  - RULE-SET,telegram,JP
+  - RULE-SET,spotify,SGP
+  - RULE-SET,broker,HKG
   - RULE-SET,youtube,CHINA
+  - RULE-SET,crypto,ASIA
   - RULE-SET,netflix,AI
   - RULE-SET,google,AI
   - GEOSITE,apple-intelligence,AI
   - GEOSITE,category-ai-!cn,AI
   - GEOSITE,category-porn,JP
-  - RULE-SET,telegram,JP
-  - RULE-SET,spotify,SGP
-  - RULE-SET,broker,HKG
   - RULE-SET,gfw,PROXY
   - RULE-SET,proxy,PROXY
   - GEOIP,JP,JP,no-resolve
