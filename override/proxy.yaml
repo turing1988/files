@@ -113,12 +113,10 @@ proxy-groups:
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/China.png
   - name: TW
     type: url-test
-    hidden: true
     include-all: true
     filter: (?i)台湾|TW|Tai.?Wan
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/China.png
   - name: HKG
-    hidden: true
     type: url-test
     include-all: true
     filter: (?i)香港|HK|Hong.?Kong
@@ -128,12 +126,13 @@ proxy-groups:
     include-all: true
     filter: (?i)日本|JP|Japan|东京|大阪|北海道
     icon: https://fastly.jsdelivr.net/gh/Semporia/Hand-Painted-icon@master/Rounded_Rectangle/Japan.png
-  - name: BYBIT
+  - name: KR
     type: url-test
-    hidden: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
+    use:
+      - All
     include-all: true
-    filter: (?i)韩国|Korea|台湾|TW|Tai.?Wan|英国|UK|土耳|Turkey|阿根|Argentina|德国|荷兰|澳|保加利亚|巴黎|西班牙
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
+    filter: (?:)(韩|Korea)
   - name: SGP
     type: url-test
     include-all: true
@@ -242,13 +241,15 @@ rule-providers:
     behavior: classical
     url: https://direct.sleepstars.de/geosite/gfw
 rules:
+  - DOMAIN-SUFFIX,bycsi.com,KR
+  - DOMAIN-SUFFIX,kraken.zendesk.com,USA
   - RULE-SET,private,DIRECT
   - RULE-SET,my_direct,DIRECT
   - RULE-SET,ads,REJECT
   - RULE-SET,usa,USA
   - RULE-SET,euro,EURO
   - RULE-SET,asia,ASIA
-  - RULE-SET,bybit,BYBIT
+  - RULE-SET,bybit,KR
   - RULE-SET,china,CHINA
   - RULE-SET,my_proxy,PROXY
   - RULE-SET,youtube,CHINA
