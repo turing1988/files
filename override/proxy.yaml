@@ -15,6 +15,7 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
+    - 1.2.4.8
     - 223.5.5.5
     - 119.29.29.29
   nameserver-policy:
@@ -39,11 +40,15 @@ dns:
     "+.anthropic.com": "https://dns.cloudflare.com/dns-query"
   nameserver:
     - system
+    - 1.2.4.8
     - 223.5.5.5
-    - https://dns.alidns.com/dns-query
+    - 180.76.76.76
+    - 119.29.29.29
   proxy-server-nameserver:
-    - https://dns.google/dns-query
+    - 1.2.4.8
+    - https://dns.alidns.com/dns-query
     - https://dns.cloudflare.com/dns-query
+    - https://dns.google/dns-query
   fake-ip-filter:
     - "*.lan"
     - "*.local"
@@ -70,6 +75,7 @@ dns:
     - "+.baidu.com"
     - "+.baidu-int.com"
     - "+.bcebos.com"
+  follow-rule: true
 experimental:
   ignore-resolve-fail: true
 geodata-mode: true
@@ -253,6 +259,7 @@ rules:
   - RULE-SET,private,DIRECT
   - RULE-SET,my_direct,DIRECT
   - RULE-SET,ads,REJECT
+  - GEOSITE,github,HKG
   - GEOSITE,okx,HKG
   - GEOSITE,bybit,KR
   - GEOSITE,kraken,USA
@@ -279,7 +286,6 @@ rules:
   - MATCH,DIRECT
 http:
   url-rewrite:
-    - ^https?://(www\.)?chemdraw\.com\.cn/ http://www.cambridgesoft.com/ 302
     - ^https?://(www\.)?codesoftchina\.com/ https://www.teklynx.com/ 302
     - ^https?://(www\.)?coreldrawchina\.com/ https://www.coreldraw.com/cn/ 302
     - ^https?://(www\.)?crossoverchina\.com/ https://www.codeweavers.com/ 302
