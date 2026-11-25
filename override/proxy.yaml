@@ -45,11 +45,11 @@ dns:
     - 180.76.76.76
     - 119.29.29.29
   proxy-server-nameserver:
-    - "https://fbcg02.web.ak005.com/api-v2/Aast5BI6ToulG9WPjJBCu0Ewtxamj_sUNtvNGSQfd2p205ki6b21AAv8AvQzQbZB0G7Gag-YyTjqkaUA3OtvfTJu#JP"
     - 1.2.4.8
     - https://dns.alidns.com/dns-query
     - https://dns.cloudflare.com/dns-query
     - https://dns.google/dns-query
+    - "https://fbcg02.web.ak005.com/api-v2/Aast5BI6ToulG9WPjJBCu0Ewtxamj_sUNtvNGSQfd2p205ki6b21AAv8AvQzQbZB0G7Gag-YyTjqkaUA3OtvfTJu#JP"
   fake-ip-filter:
     - "*.lan"
     - "*.local"
